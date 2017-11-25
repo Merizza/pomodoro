@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <head>
+  <audio id="buzzer" src="https://notificationsounds.com/soundfiles/05f971b5ec196b8c65b75d2ef8267331/file-sounds-792-the-little-dwarf.mp3"></audio>
+</head>
+<body>
+  <header>
+    <h1>Pomodoro</h1>
+    <input id="task" type="text" placeholder="Name your task" required autofocus>
+    <div id="active-task"></div>
+   </header>
+        
+  <div id="timeDisplay"></div>
+        
+  <div class="settings">
+    <div class="timeSettings">
+      <div class ="circle">
+          <input id="sessionTime" type="number" value=25>
+       </div>
+     </div>
+      <div id="control">
+        <div id="startButton">
+          <div class="middleCircle">
+            <a id="start" href="#">Start</a>
+            <a id="pause" href='#'>Pause</a>
+           </div>
+        </div>
+        </div>
+        <div class="timeSettings">
+          <div class="circle">
+            <input id="breakTime" type="number" value=5>
+           </div>
+        </div>
+    </div>
+        
+  <div id="control2">
+    <div>
+      <a id="resume" href="#">Resume</a>
+    </div>
+    <div>
+      <a id="stop" href="#">Stop/Reset</a>
+    </div>
+  </div>
+  
+  <script src="js/app.js"></script>
+ </body>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

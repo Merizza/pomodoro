@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:700");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #8C5E58;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #FFF7F8;
+}
+
+a {
+  font-size: 1.5em;
+  color: #FFF7F8;
+}
+a:link {
+  text-decoration: none;
+}
+
+header {
+  margin: 20px auto;
+  text-align: center;
+}
+header h1 {
+  font-size: 3em;
+  font-family: "Raleway", cursive;
+  color: #FFA69E;
+  margin-bottom: 20px;
+}
+header input {
+  width: 250px;
+  border: none;
+  border-bottom: 2px solid #FFA69E;
+  outline: none;
+  background: #8C5E58;
+  text-align: center;
+  color: #FFF7F8;
+}
+header ::-webkit-input-placeholder {
+  color: #FFF7F8;
+  opacity: 0.7;
+}
+header :-moz-placeholder {
+  color: #FFF7F8;
+  opacity: 0.7;
+}
+header ::-moz-placeholder {
+  color: #FFF7F8;
+  opacity: 0.7;
+}
+header :-ms-input-placeholder {
+  color: #FFF7F8;
+  opacity: 0.7;
+}
+header #active-task {
+  font-size: 1.3em;
+  margin-top: -25px;
+  visibility: hidden;
+}
+
+#timeDisplay {
+  margin-top: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.settings {
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  margin: 40px auto;
+  height: 250px;
+  width: 80%;
+}
+
+.timeSettings {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid #FF7E6B;
+  background: #FFA69E;
+}
+.circle input {
+  text-align: center;
+  color: #8C5E58;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.circle input[type=number]::-webkit-inner-spin-button,
+.circle input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#control {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#startButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #FF7E6B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middleCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFA69E;
+  box-shadow: inset 6px 6px 6px #8C5E58;
+}
+.middleCircle #start {
+  color: #8C5E58;
+  font-weight: bold;
+}
+.middleCircle #pause {
+  position: absolute;
+  visibility: hidden;
+}
+
+#control2 {
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8em;
+  line-height: 1em;
+}
